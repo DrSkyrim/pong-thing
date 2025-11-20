@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8ii6c2v32slk"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tq22b"]
+distance = -73.22673
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fjfaw"]
+distance = -72.556915
+
+[node name="PlayingField" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(614, 311)
+
+[node name="Collidertop" type="CollisionShape2D" parent="StaticBody2D"]
+rotation = 3.1415927
+scale = Vector2(7.127518, 4.178802)
+shape = SubResource("WorldBoundaryShape2D_tq22b")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(614, 311)
+
+[node name="Colliderbottom" type="CollisionShape2D" parent="StaticBody2D2"]
+scale = Vector2(6.151377, 4.617065)
+shape = SubResource("WorldBoundaryShape2D_fjfaw")
