@@ -10,6 +10,8 @@ radius = 1.0
 
 [node name="ball" type="CharacterBody2D" parent="."]
 scale = Vector2(1.16, 1)
+motion_mode = 1
+wall_min_slide_angle = 1.1431906
 script = ExtResource("1_41u45")
 
 [node name="Sprite2D" type="Sprite2D" parent="ball"]
