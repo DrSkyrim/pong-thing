@@ -11,11 +11,11 @@
 [node name="Game_Manager" parent="." instance=ExtResource("1_iywne")]
 unique_name_in_owner = true
 
+[node name="PlayingField" parent="." instance=ExtResource("1_uwrxv")]
+
 [node name="Ball" parent="." instance=ExtResource("2_yqjtg")]
 position = Vector2(602, 326)
 scale = Vector2(15.035148, -15.036174)
-
-[node name="PlayingField" parent="." instance=ExtResource("1_uwrxv")]
 
 [node name="Paddle_Left" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(25, 268)
