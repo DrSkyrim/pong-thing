@@ -12,7 +12,7 @@
 unique_name_in_owner = true
 
 [node name="Ball" parent="." instance=ExtResource("2_yqjtg")]
-position = Vector2(602, 326)
+position = Vector2(576, 320)
 scale = Vector2(15.035148, -15.036174)
 
 [node name="PlayingField" parent="." instance=ExtResource("1_uwrxv")]

@@ -4,8 +4,11 @@ extends CharacterBody2D
 @export var arena_width: float = 1152   # Set this to your screen width
 @export var arena_height: float = 640   # Optional (if you want bottom/top detection)
 func _ready() -> void:
+	print(position)
+	_reset_ball()
+	print(position)
 	velocity = Vector2(200, 200)   # starting speed
-
+	
 func _physics_process(delta: float) -> void:
 		var collision = move_and_collide(velocity * delta)
 		if collision:
@@ -31,7 +34,8 @@ func _check_out_of_bounds() -> void:
 
 func _reset_ball() -> void:
 	# Reset position to center
-	position = Vector2(arena_width / 2, arena_height / 2)
+	print("XD")
+	position = Vector2(0, 0)
 
 	# Give the ball a fresh random direction
 	var dir = Vector2(randf_range(-1, 1), randf_range(-0.6, 0.6)).normalized()
